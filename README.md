@@ -6,16 +6,16 @@ This is the code of [this](https://arxiv.org/abs/2302.00918) ICIG2023 paper.
 ## Usage
 
 ### Get data
-The DFGC2022 dataset can be download from [GoogleDrive](https://drive.google.com/file/d/1FYeEGHvShszO97RnjXtCV-lK3q1qeV51/view?usp=share_link) or [BaiduCloud](https://pan.baidu.com/s/1dUmHl3iGjVxDu47fH9JwrA?pwd=wuhp). Note that the train-test seperation in the above data (*'train'*, *'test1'*, *'test2'*, and *'test3'*) is the one applied to the DFGC-VRA competetion (IJCB2023), which is different from the seperation applied in this paper (*'C1'*, *'C2'*, *'C3'*). The labels used in this paper can be found in the *metadata* folder. The downloaded dataset is assumed to be saved in the *data* folder.
+The DFGC2022 dataset can be download from [GoogleDrive](https://drive.google.com/file/d/1FYeEGHvShszO97RnjXtCV-lK3q1qeV51/view?usp=share_link) or [BaiduCloud](https://pan.baidu.com/s/1dUmHl3iGjVxDu47fH9JwrA?pwd=wuhp). Note that the train-test seperation in the above data (*'train'*, *'test1'*, *'test2'*, and *'test3'*) is the one applied to the DFGC-VRA competetion (IJCB2023), which is different from the seperation applied in this paper (*'C1'*, *'C2'*, *'C3'*). The labels used in this paper can be found in the `metadata` folder. The downloaded dataset is assumed to be saved in the `data` folder.
 
 For video preprocessing, we crop the videos and keep only the facial region. Run `video_crop.py` to preform cropping. Note that the `cv2.CascadeClassifier` method is used, so you might need to download the corresponding setting file.
 
 ### Extra features
 We borrowed models from related tasks as our feature extractors. You may find these models according to the table below.
 
-For the traditional-feature-based models, you can get the features with modifying a few paths in their original code. For the deep models, we provide the code in the *extra_feature* folder. You need to download the models first and put it in the folder with the corrseponding name.
+For the traditional-feature-based models, you can get the features with modifying a few paths in their original code. For the deep models, we provide the feature extraction code in the `extra_feature` folder. You need to download the models first and put it in the folder with the corrseponding name.
 
-All extracted features are assumed to be solved in the *feature* folder.
+All extracted features are assumed to be solved in the `feature` folder.
 
 |method|link|
 |----|----|
