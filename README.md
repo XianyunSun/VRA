@@ -39,12 +39,17 @@ We first decide the dimensionality of the selected features by running `feats_nu
 ### Train and test
 We train a SVR on the selected features and test its performance. Run `predict.py` to get a prediction, run `eval.py` for evaluation. Please refer to the code for more details. 
 
-This scrip is mostly borrowed from [here](https://github.com/vztu/BVQA_Benchmark.git)[<sup>1</sup>](#refer-anchor-1).
+This scrip is mostly borrowed from [here](https://github.com/vztu/BVQA_Benchmark.git)[<sup>1</sup>].
 
 
-## Reference
-
-<div id="refer-anchor-1"></div>
-
-- [1] Tu, Zhengzhong, et al. "UGC-VQA: Benchmarking blind video quality assessment for user generated content." IEEE Transactions on Image Processing 30 (2021): 4449-4464.
+## Cite
+If you find our work useful, please cite it as:
+```
+@article{sun2023visual,
+  title={Visual Realism Assessment for Face-swap Videos},
+  author={Sun, Xianyun and Dong, Beibei and Wang, Caiyong and Peng, Bo and Dong, Jing},
+  journal={arXiv preprint arXiv:2302.00918},
+  year={2023}
+}
+```
 
