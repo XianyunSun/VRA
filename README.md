@@ -39,7 +39,7 @@ We first decide the dimensionality of the selected features by running `feats_nu
 ### Train and test
 We train a SVR on the selected features and test its performance. Run `predict.py` to get a prediction, run `eval.py` for evaluation. Please refer to the code for more details. 
 
-This scrip is mostly borrowed from [here](https://github.com/vztu/BVQA_Benchmark.git)[<sup>1</sup>].
+This scrip is mostly borrowed from [here](https://github.com/vztu/BVQA_Benchmark.git).
 
 
 ## Cite
