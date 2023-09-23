@@ -6,8 +6,9 @@ This is the code of [this](https://arxiv.org/abs/2302.00918) ICIG2023 paper.
 ## Usage
 
 ### Get data
-To download the dataset of this work, please refer to the [DFGC-2022 project](https://github.com/NiCE-X/DFGC-2022) and apply with an application form.
-The labels used in this paper can be found in the `metadata` folder. The downloaded dataset is assumed to be saved in the `data` folder.
+To download the dataset of this work, please refer to the [DFGC-2022 project](https://github.com/NiCE-X/DFGC-2022) and apply with an application form.The downloaded dataset is assumed to be saved in the `data` folder.
+
+The labels used in this paper can be found in the `metadata` folder. The `C*-mos` files provide the ground truth realism score of each video, while the `C*-mos-subid` files provide a method level realism score by averaging the score of all videos with the same submission id, as each submission id repersents a unique face-swap method.
 
 For video preprocessing, we crop the videos and keep only the facial region. Run `video_crop.py` to preform cropping. Note that the `cv2.CascadeClassifier` method is used, so you might need to download the corresponding setting file.
 
