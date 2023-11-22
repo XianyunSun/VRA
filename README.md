@@ -10,7 +10,7 @@ To download the dataset of this work, please refer to the [DFGC-2022 project](ht
 
 The labels used in this paper can be found in the `metadata` folder. The `C*-mos` files provide the ground truth realism score of each video, while the `C*-mos-subid` files provide a method level realism score by averaging the scores of all videos with the same submission id, as each submission id repersents a unique face-swap method.
 
-For video preprocessing, we crop the videos and keep only the facial region. Relative coordinates of the bounding box for each video is provided in the `crop` folder, with the top left corner set as the origin. Note that the width `w` and height `h` of the boxes in the given files are the original face detection results given by `cv2.CascadeClassifier`, so you will need to crop the image using a 1.3 times larger box (`w*1.3 × h*1.3`) to reproduce the experiment in the paper.
+For video preprocessing, we crop the videos and keep only the facial region. Relative coordinates of the bounding box for each video is provided in the `crop` folder, with the top left corner set as the origin. `x` and `y` is the location of the upper-left corner of the bounding box. Note that the width `w` and height `h` of the boxes in the given files are the original face detection results given by `cv2.CascadeClassifier`, so you will need to crop the image using a 1.3 times larger box (`w*1.3 × h*1.3`) to reproduce the experiment in the paper.
 
 ### Extra features
 We borrowed models from related tasks as our feature extractors. You may find these models according to the table below.
